@@ -19,9 +19,15 @@ class MyView : AppCompatActivity(), View.OnClickListener {
         when(view?.id){
             R.id.services_btn->{
                 // Consultar servicio
-                Toast.makeText(this, "Se llama servicio de consulta", Toast.LENGTH_SHORT).show()
+                consumirServicios()
             }
         }
     }
 
+
+    fun consumirServicios (){
+
+        Toast.makeText(this, "Se llama servicio de consulta", Toast.LENGTH_SHORT).show()
+
+    }
 }
