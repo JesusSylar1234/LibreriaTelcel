@@ -1,5 +1,6 @@
 package com.example.mylibraryservices
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -19,15 +20,12 @@ class MyView : AppCompatActivity(), View.OnClickListener {
         when(view?.id){
             R.id.services_btn->{
                 // Consultar servicio
-                consumirServicios()
+                prueba_llamar_servicio(this)
             }
         }
     }
 
-
-    fun consumirServicios (){
-
-        Toast.makeText(this, "Se llama servicio de consulta", Toast.LENGTH_SHORT).show()
-
+    fun prueba_llamar_servicio(context: Context?) {
+        Toast.makeText(context, "Se llama servicio de consulta", Toast.LENGTH_SHORT).show()
     }
 }
